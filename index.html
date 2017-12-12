@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section id="team_selector" class="team_section">
+		<h1>Trivial</h1>
+		<h2>Select the name of your teams!</h2>
+		<div class="relative_container"></div>
+		<div class="team_container">
+			<img src="img/trivial.png" alt="Trivial" class="img_trivial">
+			<div class="team_1">
+				<input type="text" id="team_1_name" class="team_1 input_style" placeholder="Team 1" value="Team 1">
+				<div class="color_center position_color">
+					<p>Choose your color</p>
+					<select name="colors" id="team_1_color">
+						<option value="red">Red</option>
+						<option value="orange">Orange</option>
+						<option value="yellow">Yellow</option>
+					</select>
+				</div>
+			</div>
+			<div class="team_2">
+				<input type="text" id="team_2_name" class="team_2 input_style" placeholder="Team 2" value="Team 2">
+				<div class="color_center position_color_2">
+					<p>Choose your color</p>
+					<select name="colors" id="team_2_color">
+						<option value="olive">Olive</option>
+						<option value="green">Green</option>
+						<option value="lime">Lime</option>
+					</select>
+				</div>
+			</div>
+			<div class="team_3">
+				<input type="text" id="team_3_name" class="team_3 input_style" placeholder="Team 3" value="Team 3">
+				<div class="color_center position_color_3">
+					<p>Choose your color</p>
+					<select name="colors" id="team_3_color">
+						<option value="blue">Blue</option>
+						<option value="aqua">Aqua</option>
+						<option value="teal">Teal</option>
+					</select>
+				</div>
+			</div>
+			<div class="team_4">
+				<input type="text" id="team_4_name" class="team_4 input_style" placeholder="Team 4" value="Team 4">
+				<div class="color_center position_color_4">
+					<p>Choose your color</p>
+					<select name="colors" id="team_4_color">
+						<option value="maroon">Maroon</option>
+						<option value="gray">Gray</option>
+						<option value="silver">Silver</option>
+					</select>
+				</div>
+			</div>
+			<div class="button_team">
+				<input type="button" id="play_button" class="button" value="PLAY">
+			</div>
+		</div>
+	</section>
+	<section id="game" style="display: none;">
+		<article class="question_container">
+			<div id="category_selector" class="category_container">
+				<h2>Choose your Category</h2>
+				<a href="#" id="category_1" data_category="1" class="category_button"><span></span></a>
+				<a href="#" id="category_2" data_category="2" class="category_button"><span></span></a>
+				<a href="#" id="category_3" data_category="3" class="category_button"><span></span></a>
+				<a href="#" id="category_4" data_category="4" class="category_button"><span></span></a>
+				<a href="#" id="category_5" data_category="5" class="category_button"><span></span></a>
+			</div>
+
+			<div id="question">
+				<h2 id="question_text"></h2>
+				<a href="0" id="answer_1" data_answer="1" class="answer_button"></a>
+				<a href="1" id="answer_2" data_answer="2" class="answer_button"></a>
+				<a href="2" id="answer_3" data_answer="3" class="answer_button"></a>
+				<a href="3" id="answer_4" data_answer="4" class="answer_button"></a>
+			</div>
+		</article>
+		<aside>
+			<div class="container_teams">
+				<div class="container_team_1 position1 team_panel_position">
+					<div class="panel">Your turn!<br><span class="countdown">30s</span></div>
+					<div class="div_index">
+						<p><span id="team_1_aside_name">Team 1</span> | Score: <span id="team_1_score">0</span></p>
+						<ul>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_1" alt="trofeo"></li>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_2" alt="trofeo"></li>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_3" alt="trofeo"></li>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_4" alt="trofeo"></li>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_5" alt="trofeo"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="container_team_2 position2 team_panel_position">
+					<div class="panel">Your turn!<br><span class="countdown">30s</span></div>
+					<div class="div_index">
+						<p><span id="team_2_aside_name">Team 2</span> | Score: <span id="team_2_score">0</span></p>
+						<ul>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_1" alt="trofeo"></li>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_2" alt="trofeo"></li>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_3" alt="trofeo"></li>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_4" alt="trofeo"></li>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_5" alt="trofeo"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="container_team_3 position3 team_panel_position">
+					<div class="panel">Your turn!<br><span class="countdown">30s</span></div>
+					<div class="div_index">
+						<p><span id="team_3_aside_name">Team 3</span> | Score: <span id="team_3_score">0</span></p>
+						<ul>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_1" alt="trofeo"></li>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_2" alt="trofeo"></li>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_3" alt="trofeo"></li>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_4" alt="trofeo"></li>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_5" alt="trofeo"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="container_team_4 position4 team_panel_position">
+					<div class="panel">Your turn!<br><span class="countdown">30s</span></div>
+					<div class="div_index">
+						<p><span id="team_4_aside_name">Team 4</span> | Score: <span id="team_4_score">0</span></p>
+						<ul>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_1" alt="trofeo"></li>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_2" alt="trofeo"></li>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_3" alt="trofeo"></li>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_4" alt="trofeo"></li>
+							<li><img src="img/trophy.png" class="trophy trophy_of_category_5" alt="trofeo"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</aside>
+	</section>
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
